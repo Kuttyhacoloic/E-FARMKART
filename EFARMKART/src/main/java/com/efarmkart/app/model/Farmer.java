@@ -1,5 +1,5 @@
 package com.efarmkart.app.model;
-import com.efarmkart.darkStore.app.EfarmkartApplication;
+import com.efarmkart.app.EfarmkartApplication;
 
 import jakarta.persistence.*;
 import lombok.*;

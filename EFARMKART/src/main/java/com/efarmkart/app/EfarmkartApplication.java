@@ -1,4 +1,4 @@
-package com.efarmkart.darkStore.app;
+package com.efarmkart.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
