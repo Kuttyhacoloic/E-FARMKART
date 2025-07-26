@@ -25,4 +25,6 @@ public class ConsignmentService {
 	public List<Consignment> findConsignmentByStatus(String status){
 		return consignmentRepo.findAll();
 		}
+	
+	
 }

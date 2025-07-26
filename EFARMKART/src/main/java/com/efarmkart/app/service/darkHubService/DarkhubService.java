@@ -40,7 +40,7 @@ public class DarkhubService {
 
 	public Optional<DarkHub> deleteById(Long id){
 	    Optional<DarkHub> hub = darkHubRepo.findById(id);
-	    hub.ifPresent(darkHubRepo::delete);  // only delete if present
+	    hub.ifPresent(darkHubRepo::delete);  
 	    return hub;
 	}
 
