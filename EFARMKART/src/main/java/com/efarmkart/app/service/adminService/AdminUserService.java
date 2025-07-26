@@ -27,5 +27,11 @@ public class AdminUserService {
 	public Optional<AdminUser> getAdminById(Long id) {
 		return adminuserrepo.findById(id);
 	}
+	
+	public Optional<AdminUser> deleteAdminById(Long id) {
+	    Optional<AdminUser> adminUserOptional = adminuserrepo.findById(id);
+	    adminUserOptional.ifPresent(adminuserrepo::delete);
+	    return adminUserOptional;
+	}
 
 }
