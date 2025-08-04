@@ -26,5 +26,8 @@ public class ConsignmentService {
 		return consignmentRepo.findAll();
 		}
 	
+	public void delete(Iterable<Long> id) {
+		consignmentRepo.deleteAllByIdInBatch(id);
+	}
 	
 }

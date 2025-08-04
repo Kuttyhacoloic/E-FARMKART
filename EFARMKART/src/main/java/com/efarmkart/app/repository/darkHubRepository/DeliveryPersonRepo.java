@@ -8,4 +8,5 @@ import com.efarmkart.app.model.darkHubModel.DeliveryPerson;
 @Repository
 public interface DeliveryPersonRepo extends JpaRepository<DeliveryPerson, Long> {
 
+	public DeliveryPerson findByVechicalId(String vehicleNumber);
 }
